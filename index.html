@@ -1,21 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sport</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <style>
+    body {
+       /* background-image: url("images/home_background.jpg"); */
+    }
+    .headcontainer {
+        display: flex;
+        flex-direction: row;
+        background-color: gainsboro;
+        justify-content: center;
+        align-items: center;
+    }
+    .headboxitem{
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+    }
+    .logoclass{
+        justify-content: left;
+        align-items: start;
+        align-self: flex-start;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .bilderreihe {
+        display: flex;
+        background-color: tomato;
+        flex-direction: row;
+        height: 500px;
+    }
+    .bild{
+        display: flex;
+        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+
+  </style>
+
 </head>
 <body>
-<section class="section">
-    <div class="container">
-        <h1 class="title">
-            Hello World
-        </h1>
-        <p class="subtitle">
-            My first website with <strong>Bulma</strong>!
-        </p>
+<header>
+  <div class="headcontainer">
+    <svg class="logoclass" width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    <nav class="headcontainer">
+      <b class="headboxitem"><a href="eins.asp">eins</a></b>
+      <b class="headboxitem"><a href="zwei.asp">zwei</a></b>
+      <b class="headboxitem"><a href="drei.asp">drei</a></b>
+      <b class="headboxitem"><a href="vier.asp">vier</a></b>
+    </nav>
+  </div>
+</header>
+
+
+<section>
+  <div class="bilderreihe">
+    <div class="bild">
+      <img src="image1" alt="ersteKarte">
+      <h2>Dehnübungen</h2>
     </div>
+    <div class="bild">
+      <img src="image2" alt="zweiteKarte">
+      <h2>Laufen</h2>
+    </div>
+    <div class="bild">
+      <img src="image3" alt="drittesBild">
+    </div>
+  </div>
 </section>
+
+<article>
+  <div class="container">
+    <p>
+      Die Seite wird mit einem text vorgestellt
+    </p>
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+
+  </div>
+</footer>
+
 </body>
 </html>
