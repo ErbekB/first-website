@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+
+        .headcontainer {
+
+            display: flex;
+            flex-direction: row;
+            background-color: gainsboro;
+            justify-content: center;
+
+        }
+        .headboxitem {
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            margin: 30px;
+        }
+
+        .logoclass {
+            justify-content: left;
+            align-items: start;
+            align-self: flex-start;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .bilderreihe {
+            display: flex;
+            background-color: tomato;
+            flex-direction: row;
+            height: 500px;
+        }
+        .bild {
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            flex-basis: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headcontainer">
+            <svg class="logoclass" width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"  />
+            </svg>
+            <nav class="headcontainer">
+                <li class="headboxitem"><a href="eins.asp">eins</a></li>
+                <li class="headboxitem"><a href="zwei.asp">zwei</a></li>
+                <li class="headboxitem"><a href="drei.asp">drei</a></li>
+                <li class="headboxitem"><a href="vier.asp">vier</a></li>
+            </nav>
+        </div>
+    </header>
+
+
+
+        <div class="bilderreihe">
+          <div class="bild">
+              <img src="woman.png" alt="woman stretching"></img>
+              <h2>Dehnübungen</h2>
+              <button class="button">BUTTON</button>
+          </div>
+            <div class="bild">
+                <img src="woman.png" alt="woman stretching"></img>
+                <h2>Dehnübungen</h2>
+                <button class="button">BUTTON</button>
+            </div>
+            <div class="bild">
+                <img src="woman.png" alt="woman stretching"></img>
+                <h2>Dehnübungen</h2>
+                <button class="button">BUTTON</button>
+            </div>
+        </div>
+
+<article>
+    <div class="container">
+        <p>
+            Wir lieben Sport
+        </p>
+    </div>
+</article>
+
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
+
+</body>
+</html>
