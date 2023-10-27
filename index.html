@@ -1,99 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sport</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sport</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-  <style>
-    body {
-       /* background-image: url("images/home_background.jpg"); */
-    }
-    .headcontainer {
-        display: flex;
-        flex-direction: row;
-        background-color: gainsboro;
-        justify-content: center;
-        align-items: center;
-    }
-    .headboxitem{
-        border: 2px solid black;
-        display: flex;
-        align-items: center;
-        margin: 10px;
+    <style>
+        body {
+            /*background-image: url("images/home_background.jpg");*/
+        }
 
-    }
-    .logoclass{
-        justify-content: left;
-        align-items: start;
-        align-self: flex-start;
-        margin-left: 0;
-        margin-right: auto;
-    }
-    .bilderreihe {
-        display: flex;
-        background-color: tomato;
-        flex-direction: row;
-        height: 500px;
-    }
-    .bild{
-        display: flex;
-        border: 2px solid black;
-        justify-content: center;
-        align-items: center;
-        flex-basis: 0;
-        flex-grow: 1;
-    }
+        .head-container {
+            display: flex;
+            flex-direction: row;
+            background-color: gainsboro;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .head-box-item {
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+
+        }
+
+        .logo-class {
+            justify-content: left;
+            align-items: start;
+            align-self: flex-start;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .section-container{
+            display: flex;
+            justify-content: center;
+            height: 900px;
+        }
+
+        .picture-container {
+            display: flex;
+            background-color: tomato;
+            max-width: 1500px;
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        .bild {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
 
 
-  </style>
+    </style>
 
 </head>
 <body>
 <header>
-  <div class="headcontainer">
-    <svg class="logoclass" width="100" height="100">
-      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-    </svg>
-    <nav class="headcontainer">
-      <b class="headboxitem"><a href="eins.asp">eins</a></b>
-      <b class="headboxitem"><a href="zwei.asp">zwei</a></b>
-      <b class="headboxitem"><a href="drei.asp">drei</a></b>
-      <b class="headboxitem"><a href="vier.asp">vier</a></b>
-    </nav>
-  </div>
+    <div class="head-container">
+        <svg class="logo-class" width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+        </svg>
+        <nav class="head-container">
+            <b class="head-box-item"><a href="eins.asp">eins</a></b>
+            <b class="head-box-item"><a href="zwei.asp">zwei</a></b>
+            <b class="head-box-item"><a href="drei.asp">drei</a></b>
+            <b class="head-box-item"><a href="vier.asp">vier</a></b>
+        </nav>
+    </div>
 </header>
 
 
-<section>
-  <div class="bilderreihe">
-    <div class="bild">
-      <img src="image1" alt="ersteKarte">
-      <h2>Dehnübungen</h2>
+<section class="section-container">
+    <div class="picture-container">
+        <div class="bild">
+            <img src="image1" alt="ersteKarte">
+            <h2>Dehnübungen</h2>
+        </div>
+        <div class="bild">
+            <img src="image2" alt="zweiteKarte">
+            <h2>Laufen</h2>
+        </div>
+        <div class="bild">
+            <img src="image3" alt="drittesBild">
+            <h2>Springen zum Mond</h2>
+        </div>
     </div>
-    <div class="bild">
-      <img src="image2" alt="zweiteKarte">
-      <h2>Laufen</h2>
-    </div>
-    <div class="bild">
-      <img src="image3" alt="drittesBild">
-    </div>
-  </div>
 </section>
 
+
 <article>
-  <div class="container">
-    <p>
-      Die Seite wird mit einem text vorgestellt
-    </p>
-  </div>
+    <div>
+        <p>
+            Die Seite wird mit einem text vorgestellt
+        </p>
+    </div>
 </article>
 
 <footer>
-  <div class="container">
+    <div>
 
-  </div>
+    </div>
 </footer>
 
 </body>
