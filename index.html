@@ -14,20 +14,19 @@
         .head-container {
             display: flex;
             flex-direction: row;
-            background-color: gainsboro;
+            background-color: #e7e6e6;
             justify-content: center;
             align-items: center;
         }
 
         .head-box-item {
-            border: 2px solid black;
             display: flex;
+            border: 2px solid black;
             align-items: center;
             margin: 10px;
-
         }
 
-        .logo-class {
+        .logo-item {
             justify-content: left;
             align-items: start;
             align-self: flex-start;
@@ -35,15 +34,16 @@
             margin-right: auto;
         }
 
-        .section-container{
+        .section-container {
             display: flex;
+            background-color: #eaeaea;
             justify-content: center;
-            height: 900px;
+            height: 80vh;
         }
 
         .picture-container {
             display: flex;
-            background-color: tomato;
+            background-color: #BDD684;
             max-width: 1500px;
             flex-grow: 1;
             flex-basis: 0;
@@ -52,11 +52,64 @@
         .bild {
             display: flex;
             flex-direction: column;
-            border: 2px solid black;
             justify-content: center;
             align-items: center;
             flex-basis: 0;
             flex-grow: 1;
+            position: relative;
+
+            & img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: 1s ease;
+                z-index: 1;
+
+
+                &:hover {
+                    transform: scale(1.03);
+                    transition: 0.5s ease;
+                }
+            }
+
+            & button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 75%;
+                left: auto;
+                z-index: 2;
+                width: 5em;
+                height: 1.5em;
+                border:solid 3px black;
+                border-radius: 0.8rem;
+                background: rgba(255, 255, 255,0);
+                font-size: 2em;
+
+                &:hover{
+                    background:black;
+                    color:white;
+                }
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            .section-container {
+                height: 120em;
+            }
+
+            .picture-container {
+                flex-direction: column;
+            }
+        }
+
+        .article-container {
+            display: flex;
+            background-color: black;
+            justify-content: center;
         }
 
 
@@ -66,7 +119,7 @@
 <body>
 <header>
     <div class="head-container">
-        <svg class="logo-class" width="100" height="100">
+        <svg class="logo-item" width="100" height="100">
             <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
         </svg>
         <nav class="head-container">
@@ -82,22 +135,25 @@
 <section class="section-container">
     <div class="picture-container">
         <div class="bild">
-            <img src="image1" alt="ersteKarte">
-            <h2>Dehnübungen</h2>
+            <img src="images/home_background.jpg" alt="ersteKarte">
+            <h2>Rücken</h2>
+            <button>Erkunde</button>
         </div>
         <div class="bild">
-            <img src="image2" alt="zweiteKarte">
-            <h2>Laufen</h2>
+            <img src="images/yoga.jpg" alt="yoga">
+            <h2>Beine</h2>
+            <button>Erkunde</button>
         </div>
         <div class="bild">
-            <img src="image3" alt="drittesBild">
-            <h2>Springen zum Mond</h2>
+            <img src="images/dehnen.jpg" alt="dehnen">
+            <h2>Nacken</h2>
+            <button>Erkunde</button>
         </div>
     </div>
 </section>
 
 
-<article>
+<article class="article-container">
     <div>
         <p>
             Die Seite wird mit einem text vorgestellt
