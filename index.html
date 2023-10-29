@@ -3,19 +3,228 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Sport</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+
+        .head-container {
+            display: flex;
+            background-color: #e0e8ec;
+            justify-content: center;
+            align-items: center;
+            height: 8vh;
+            min-height: 60px;
+
+            & div {
+                display: flex;
+                width: 1500px;
+            }
+
+            & img {
+                font-size: 100em;
+                margin-right: auto;
+            }
+
+            & nav {
+                display: flex;
+                align-items: end;
+                margin-right: 1em;
+
+                & a {
+                    display: flex;
+                    margin: 0 0.7em 20px;
+                    color: #383838;
+                    transition: 250ms ease;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                        color: green;
+                    }
+                }
+            }
+        }
+
+        .section-container {
+            display: flex;
+            background-color: #c7d0d9;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .picture-container {
+            display: flex;
+            background-color: #BDD684;
+            max-width: 1500px;
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        .picture {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 0;
+            flex-grow: 1;
+            position: relative;
+
+            & img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: 500ms ease;
+                z-index: auto;
+
+                &:hover {
+                    transform: scale(1.03);
+                    transition: 300ms ease;
+                    z-index: 1;
+                }
+            }
+
+            & div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 70%;
+                left: auto;
+                z-index: 2;
+
+                @media (max-height: 720px) or (max-width: 700px) {
+                    top: auto;
+
+                }
+
+                & h2 {
+                    font-size: 5rem;
+                    color: #fff;
+                    font-family: "Times New Roman", "Castellar", fantasy;
+                    font-style: italic;
+                }
+
+                & button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 12rem;
+                    height: 3rem;
+                    border: solid 3px black;
+                    border-radius: 0.8rem;
+                    background: rgba(255, 255, 255, 0);
+                    font-size: 2rem;
+
+                    &:hover {
+                        background: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .article-container {
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            height: 40em;
+
+            & div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & h1 {
+                    font-size: 5em;
+                    color: #fff;
+                    font-family: "Times New Roman", "Castellar", fantasy;
+                    font-style: italic;
+                }
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .section-container {
+                height: 120em;
+            }
+
+            .picture-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-height: 720px) {
+
+            .section-container {
+                height: 100vh;
+            }
+        }
+
+
+    </style>
+
 </head>
 <body>
-<section class="section">
-    <div class="container">
-        <h1 class="title">
-            Hello World
-        </h1>
-        <p class="subtitle">
-            My first website with <strong>Bulma</strong>!
-        </p>
+<header class="head-container">
+    <div>
+        <img src="images/sunset.svg" alt="Logo der Seite">
+        <nav>
+            <a href="Start.asp">Start</a>
+            <a href="Rücken.asp">Rücken</a>
+            <a href="Nacken.asp">Nacken</a>
+            <a href="Beine.asp">Beine</a>
+            <a href="Über uns.asp">Über uns</a>
+            <a href="Kontakt.asp">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+
+<section class="section-container">
+    <div class="picture-container">
+        <div class="picture">
+            <img src="images/home_background.jpg" alt="ersteKarte">
+            <div>
+                <h2>Rücken</h2>
+                <button>Erkunde</button>
+            </div>
+        </div>
+        <div class="picture">
+            <img src="images/yoga.jpg" alt="yoga">
+            <div>
+                <h2>Beine</h2>
+                <button>Erkunde</button>
+            </div>
+        </div>
+        <div class="picture">
+            <img src="images/dehnen.jpg" alt="dehnen">
+            <div>
+                <h2>Nacken</h2>
+                <button>Erkunde</button>
+            </div>
+        </div>
+
     </div>
 </section>
+
+
+<article class="article-container">
+    <div>
+        <h1>Info</h1>
+        <div>
+            <p>
+                Die Seite wird mit einem text vorgestellt
+            </p>
+        </div>
+    </div>
+</article>
+
+<footer>
+    <div>
+
+    </div>
+</footer>
+
 </body>
 </html>
