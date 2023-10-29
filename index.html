@@ -50,7 +50,6 @@
             background-color: #c7d0d9;
             justify-content: center;
             height: 80vh;
-            max-height: 80vh;
         }
 
         .picture-container {
@@ -93,7 +92,7 @@
                 left: auto;
                 z-index: 2;
 
-                @media (max-height: 720px) or (max-width: 700px) {
+                @media (max-height: 830px) or (max-width: 700px) {
                     top: auto;
 
                 }
@@ -145,32 +144,62 @@
 
         .article-container {
             display: flex;
-            background-color: black;
+            background-color: #000000;
             justify-content: center;
-            height: 40em;
+            height: 80em;
 
             & div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                max-width: 700px;
 
                 & h1 {
+                    border: orangered solid 2px;
                     font-size: 5em;
                     color: #fff;
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: italic;
+                }
+
+                & h2 {
+                    border: orangered solid 2px;
+                    font-size: 2em;
+                    font-weight: bold;
+                    margin-top: 1em;
+                    color: #fff;
+                    font-family: "Times New Roman", "Castellar", fantasy;
+                    font-style: initial;
+                }
+
+
+                & div {
+                    border: orangered solid 2px;
+                    display: flex;
+                    max-width: 1000px;
+
+                    & p {
+                        color: white;
+                        line-height: 180%;
+                        text-align: center;
+
+                    }
                 }
             }
         }
 
         @media (max-width: 700px) {
 
+            .section-container {
+                height: auto;
+            }
+
             .picture-container {
                 flex-direction: column;
             }
         }
 
-        @media (max-height: 720px) {
+        @media (max-height: 830px) and (min-width: 700px) {
 
             .section-container {
                 height: 90vh;
@@ -229,9 +258,37 @@
 <article class="article-container">
     <div>
         <h1>Info</h1>
+        <h2>Über Sunset-Fitness</h2>
         <div>
             <p>
-                Die Seite wird mit einem text vorgestellt
+                Willkommen auf Sunset, Ihrer Quelle für natürliche Entspannung während des Arbeitstags.
+                Wir wissen, wie leicht es passiert, dass man sich in der hektischen Arbeitswelt verliert
+                und die eigenen körperlichen Bedürfnisse aus den Augen verliert. Genau deshalb haben wir
+                diese Seite geschaffen – um Ihnen einfache und effektive Übungen zur Verfügung zu stellen,
+                die Sie in kurzen Pausen direkt am Schreibtisch durchführen können.<br>
+                <br>
+                Ihre Gesundheit und Ihr Wohlbefinden sind uns wichtig, und wir laden Sie ein, sich regelmäßig
+                eine kleine Pause zu gönnen, um sich selbst zu revitalisieren. Beginnen Sie noch heute mit
+                unseren Übungen und erfahren Sie die Vorteile einer natürlichen Entspannung, die Ihren
+                Arbeitstag verbessern wird.
+            </p>
+        </div>
+        <h2>Unser Fokus</h2>
+        <div>
+            <p>
+                liegt auf den Bereichen, die oft am meisten unter der Dauerbelastung im Büro leiden:
+                <bold>Nacken</bold>
+                ,
+                <bold>Schultern</bold>
+                ,
+                <bold>Rücken</bold>
+                und
+                <bold>Handgelenke</bold>
+                .
+                Diese kleinen Übungen sind darauf ausgerichtet, Verspannungen zu lösen, die Durchblutung zu
+                fördern und Ihre Energie zu steigern. Selbst in wenigen Minuten können Sie spürbare
+                Erleichterung und Entspannung erfahren.
+
             </p>
         </div>
     </div>
