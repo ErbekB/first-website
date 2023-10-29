@@ -104,8 +104,12 @@
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: italic;
 
-                    @media (max-width: 900px) {
+                    @media (max-width: 900px) and (min-width: 701px) {
                         font-size: 9vw;
+                    }
+
+                    @media (max-width: 700px) {
+                        font-size: 12vw;
                     }
                 }
 
@@ -120,10 +124,15 @@
                     background: rgba(255, 255, 255, 0);
                     font-size: 2rem;
 
-                    @media (max-width: 900px) {
+                    @media (max-width: 900px) and (min-width: 701px) {
                         font-size: 3.5vw;
                         width: 18vw;
                         height: 5vw;
+                    }
+                    @media (max-width: 700px) {
+                        font-size: 5vw;
+                        width: 22vw;
+                        height: 7vw;
                     }
 
                     &:hover {
