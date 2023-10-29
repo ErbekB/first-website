@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-  width: 100px;
+  width: 150px;
 }
 
 header {
@@ -47,7 +47,7 @@ header ul {
 
 header ul a {
   text-decoration: none;
-  color: #fff;
+  color: #124C59;
   padding: 0 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -166,6 +166,7 @@ main {
 }
 
 .text h2 {
+  color: #D9C355;
   font-weight: 100;
   font-size: 6.8rem;
   line-height: 0.88;
@@ -218,7 +219,7 @@ main {
   top: 60%;
   /*width: 54.16%;*/
   left: 40%;
-  width: 25em;
+  width: 23em;
 }
 
 .katze-runter {
