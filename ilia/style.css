@@ -9,11 +9,11 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial", "Calibri", fantasy;
 }
 
 ::selection {
-  background-color: #0b372dbb;
+  background-color: #124C59;;
 }
 
 .logo {
@@ -54,55 +54,50 @@ header ul a {
   font-size: 0.83rem;
 }
 
-.search a {
-  font-size: 1.05rem;
-  padding: 0 3rem;
-}
+/*.hamburger {*/
+/*  padding-left: 1.5rem;*/
+/*}*/
 
-.hamburger {
-  padding-left: 1.5rem;
-}
+/*.hamburger a {*/
+/*  padding: 0;*/
+/*  width: 37px;*/
+/*  height: 37px;*/
+/*  display: flex;*/
+/*  border-radius: 50%;*/
+/*  background-color: rgba(115, 115, 115, 0.7);*/
+/*  backdrop-filter: blur(10px);*/
+/*  -webkit-backdrop-filter: blur(10px);*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
 
-.hamburger a {
-  padding: 0;
-  width: 37px;
-  height: 37px;
-  display: flex;
-  border-radius: 50%;
-  background-color: rgba(115, 115, 115, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  justify-content: center;
-  align-items: center;
-}
+/*.hamburger .bar {*/
+/*  position: relative;*/
+/*  width: 52%;*/
+/*  height: 1.3px;*/
+/*  background-color: #fff;*/
+/*  border-radius: 2px;*/
+/*}*/
 
-.hamburger .bar {
-  position: relative;
-  width: 52%;
-  height: 1.3px;
-  background-color: #fff;
-  border-radius: 2px;
-}
+/*.hamburger .bar::before,*/
+/*.hamburger .bar::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*  width: 60%;*/
+/*  height: 100%;*/
+/*  background-color: inherit;*/
+/*  border-radius: 2px;*/
+/*}*/
 
-.hamburger .bar::before,
-.hamburger .bar::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 100%;
-  background-color: inherit;
-  border-radius: 2px;
-}
+/*.hamburger .bar::before {*/
+/*  top: -4.5px;*/
+/*}*/
 
-.hamburger .bar::before {
-  top: -4.5px;
-}
-
-.hamburger .bar::after {
-  top: 4.5px;
-}
+/*.hamburger .bar::after {*/
+/*  top: 4.5px;*/
+/*}*/
 
 main {
   position: relative;
@@ -132,14 +127,6 @@ main {
   width: 132%;
 }
 
-.mountain-10 {
-  position: absolute;
-  z-index: 3;
-  top: 63.58%;
-  width: 71.52%;
-  left: 67.84%;
-}
-
 .fog-6 {
   position: absolute;
   z-index: 4;
@@ -148,21 +135,15 @@ main {
   width: 129.3%;
 }
 
-.mountain-9 {
+.mann {
   position: absolute;
   z-index: 5;
   top: 63.95%;
-  width: 32.63%;
+  /*width: 32.63%;*/
   left: 18.3%;
+  width: 25em;
 }
 
-.mountain-8 {
-  position: absolute;
-  z-index: 6;
-  top: 60.6%;
-  width: 56.25%;
-  left: 36%;
-}
 
 .fog-5 {
   position: absolute;
@@ -172,14 +153,6 @@ main {
   width: 31.25%;
 }
 
-.mountain-7 {
-  position: absolute;
-  z-index: 8;
-  width: 37.36%;
-  top: 65.18%;
-  left: 71.18%;
-}
-
 .text {
   position: absolute;
   z-index: 9;
@@ -187,8 +160,9 @@ main {
   left: 50%;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: #124C59;
   pointer-events: auto;
+
 }
 
 .text h2 {
@@ -203,14 +177,6 @@ main {
   font-size: 8.7rem;
 }
 
-.mountain-6 {
-  position: absolute;
-  z-index: 10;
-  top: 57.4%;
-  width: 28.33%;
-  left: 90.97%;
-}
-
 .fog-4 {
   position: absolute;
   z-index: 11;
@@ -219,12 +185,13 @@ main {
   width: 40.27%;
 }
 
-.mountain-5 {
+.hund {
   position: absolute;
   z-index: 12;
   top: 80.86%;
-  width: 43.4%;
+  /*width: 43.4%;*/
   left: 59%;
+  width: 20em;
 }
 
 .fog-3 {
@@ -235,21 +202,44 @@ main {
   width: 107.63%;
 }
 
-.mountain-4 {
+.frau-mit-fuss {
   position: absolute;
-  z-index: 14;
-  top: 74.19%;
-  width: 54.16%;
-  left: 23.55%;
+  z-index: 3;
+  top: 40%;
+  left: 30%;
+  /*width: 32.22%;*/
+  width: 15em;
+
 }
 
-.mountain-3 {
+.frau-vertical {
   position: absolute;
-  z-index: 15;
-  top: 61.35%;
-  left: 101.11%;
-  width: 32.22%;
+  z-index: 14;
+  top: 60%;
+  /*width: 54.16%;*/
+  left: 40%;
+  width: 25em;
 }
+
+.katze-runter {
+  position: absolute;
+  z-index: 8;
+  /*width: 37.36%;*/
+  top: 40%;
+  left: 90%;
+  width: 10em;
+}
+
+.mann-sitzend-recht {
+  position: absolute;
+  z-index: 10;
+  top: 57.4%;
+  /*width: 28.33%;*/
+  left: 90.97%;
+  width: 30em;
+}
+
+
 
 .fog-2 {
   position: absolute;
@@ -259,20 +249,41 @@ main {
   width: 108.33%;
 }
 
-.mountain-2 {
+
+.kind {
   position: absolute;
   z-index: 17;
   top: 69.01%;
   left: 78.61%;
-  width: 47.91%;
+  /*width: 47.91%;*/
+  width: 20em;
+
 }
 
-.mountain-1 {
+.frau-weit {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  /*width: 71.52%;*/
+  left: 67.84%;
+  width: 20em;
+}
+
+.katze-oben {
+  position: absolute;
+  z-index: 6;
+  top: 30%;
+  /*width: 56.25%;*/
+  left: 16%;
+  width: 15em;
+}
+
+.frau-sitzend {
   position: absolute;
   z-index: 18;
-  top: 52%;
+  top: 80%;
   left: 8.27%;
-  width: 37.15%;
+  width: 30em;
 }
 
 .sun-rays {
@@ -350,19 +361,14 @@ main {
     padding: 0 0.9rem;
   }
 
-  .search a {
-    font-size: 0.85rem;
-    padding: 0 1.8rem;
-  }
+  /*.hamburger {*/
+  /*  padding-left: 0.9rem;*/
+  /*}*/
 
-  .hamburger {
-    padding-left: 0.9rem;
-  }
-
-  .hamburger a {
-    height: 30px;
-    width: 30px;
-  }
+  /*.hamburger a {*/
+  /*  height: 30px;*/
+  /*  width: 30px;*/
+  /*}*/
 
   .bg-img {
     width: initial;
@@ -374,7 +380,7 @@ main {
     height: 146.17%;
   }
 
-  .mountain-10 {
+  .katze-oben {
     width: initial;
     height: 77.59%;
   }
@@ -384,12 +390,12 @@ main {
     height: 73.11%;
   }
 
-  .mountain-9 {
+  .mann {
     height: 87.64%;
     width: initial;
   }
 
-  .mountain-8 {
+  .kind {
     height: 84.33%;
     width: initial;
   }
@@ -399,12 +405,12 @@ main {
     height: 54.16%;
   }
 
-  .mountain-7 {
+  .katze-runter {
     width: initial;
     height: 72.26%;
   }
 
-  .mountain-6 {
+  .frau-vertical {
     width: initial;
     height: 56.78%;
   }
@@ -414,7 +420,7 @@ main {
     height: 104.5%;
   }
 
-  .mountain-5 {
+  .hund {
     width: initial;
     height: 60.64%;
   }
@@ -424,12 +430,12 @@ main {
     height: 90.78%;
   }
 
-  .mountain-4 {
+  .frau-mit-fuss {
     width: initial;
     height: 71.42%;
   }
 
-  .mountain-3 {
+  .mann-sitzend-recht {
     width: initial;
     height: 96.86%;
   }
@@ -439,11 +445,11 @@ main {
     height: 84.73%;
   }
 
-  .mountain-2 {
+  .frau-sitzend {
     display: none;
   }
 
-  .mountain-1 {
+  .frau-weit {
     width: initial;
     height: 100.03%;
   }
