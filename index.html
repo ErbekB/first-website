@@ -53,7 +53,7 @@
             background-color: #e0e8ec;
             transition: height 0.3s, background-color 1s;
             height: 8vh;
-            
+
             @media (max-width: 700px) {
                 position: initial;
                 transition: initial;
@@ -165,49 +165,70 @@
             display: flex;
             background-color: #000000;
             justify-content: center;
-            height: 80em;
 
             & div {
+
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                max-width: 900px;
+                max-width: 1200px;
 
                 & h1 {
-                    border: orangered solid 2px;
                     font-size: 5em;
                     color: #fff;
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: italic;
+
+                    @media (max-width: 700px) {
+                        font-size: 13vw;
+                    }
                 }
 
                 & h2 {
-                    border: orangered solid 2px;
                     font-size: 2em;
                     font-weight: bold;
                     margin-top: 1em;
                     color: #fff;
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: initial;
+
+                    @media (max-width: 700px) {
+                        font-size: 5vw;
+                    }
                 }
 
 
                 & div {
-                    border: orangered solid 2px;
                     display: flex;
                     flex-direction: row;
+                    align-items: center;
                     max-width: 1500px;
 
                     & p {
                         color: white;
-                        line-height: 180%;
+                        font-size: 1.08em;
+                        line-height: 200%;
                         text-align: left;
+                        margin: 1em 1em 2em 1em;
 
-                        margin-right: 5em;
+                        @media (max-width: 700px) {
+                            text-align: center;
+
+                        }
                     }
                     & img {
                         width: 50%;
                         object-fit: cover;
+                        margin: 1em 1em 2em 1em;
+
+                        @media (max-width: 700px) {
+                            width: 95%;
+                        }
+                    }
+
+                    @media (max-width: 700px) {
+                        flex-direction: column;
+                        height: 800px;
                     }
                 }
             }
@@ -294,36 +315,31 @@
         <h1>Info</h1>
         <h2>Über Sunset-Fitness</h2>
         <div>
+            <img src="images/green_yoga.png" alt="Yoga im grünen Wald">
             <p>
                 Willkommen auf Sunset, Ihrer Quelle für natürliche Entspannung während des Arbeitstags.
                 Wir wissen, wie leicht es passiert, dass man sich in der hektischen Arbeitswelt verliert
                 und die eigenen körperlichen Bedürfnisse aus den Augen verliert. Genau deshalb haben wir
                 diese Seite geschaffen – um Ihnen einfache und effektive Übungen zur Verfügung zu stellen,
                 die Sie in kurzen Pausen direkt am Schreibtisch durchführen können.<br>
-                <br>
+
                 Ihre Gesundheit und Ihr Wohlbefinden sind uns wichtig, und wir laden Sie ein, sich regelmäßig
                 eine kleine Pause zu gönnen, um sich selbst zu revitalisieren. Beginnen Sie noch heute mit
                 unseren Übungen und erfahren Sie die Vorteile einer natürlichen Entspannung, die Ihren
                 Arbeitstag verbessern wird.
             </p>
+
         </div>
         <h2>Unser Fokus</h2>
         <div>
             <p>
                 liegt auf den Bereichen, die oft am meisten unter der Dauerbelastung im Büro leiden:
-                <bold>Nacken</bold>
-                ,
-                <bold>Schultern</bold>
-                ,
-                <bold>Rücken</bold>
-                und
-                <bold>Handgelenke</bold>
-                .
+                Nacken, Schultern, Rücken und Handgelenke.
                 Diese kleinen Übungen sind darauf ausgerichtet, Verspannungen zu lösen, die Durchblutung zu
                 fördern und Ihre Energie zu steigern. Selbst in wenigen Minuten können Sie spürbare
                 Erleichterung und Entspannung erfahren.
             </p>
-            <img src="images/dehnen.jpg" alt="dehnen">
+            <img src="images/dehnen_im_buero.png" alt="dehnen">
         </div>
     </div>
 </article>
