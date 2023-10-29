@@ -51,7 +51,7 @@
             width: 100%;
             z-index: 100;
             background-color: #e0e8ec;
-            transition: height 0.3s;
+            transition: height 0.3s, background-color 1s;
             height: 8vh;
         }
 
@@ -166,7 +166,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                max-width: 700px;
+                max-width: 900px;
 
                 & h1 {
                     border: orangered solid 2px;
@@ -190,13 +190,19 @@
                 & div {
                     border: orangered solid 2px;
                     display: flex;
-                    max-width: 1000px;
+                    flex-direction: row;
+                    max-width: 1500px;
 
                     & p {
                         color: white;
                         line-height: 180%;
-                        text-align: center;
+                        text-align: left;
 
+                        margin-right: 5em;
+                    }
+                    & img {
+                        width: 50%;
+                        object-fit: cover;
                     }
                 }
             }
@@ -311,8 +317,8 @@
                 Diese kleinen Übungen sind darauf ausgerichtet, Verspannungen zu lösen, die Durchblutung zu
                 fördern und Ihre Energie zu steigern. Selbst in wenigen Minuten können Sie spürbare
                 Erleichterung und Entspannung erfahren.
-
             </p>
+            <img src="images/dehnen.jpg" alt="dehnen">
         </div>
     </div>
 </article>
