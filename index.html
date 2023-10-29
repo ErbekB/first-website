@@ -50,6 +50,7 @@
             background-color: #c7d0d9;
             justify-content: center;
             height: 80vh;
+            max-height: 80vh;
         }
 
         .picture-container {
@@ -98,22 +99,32 @@
                 }
 
                 & h2 {
-                    font-size: 5rem;
+                    font-size: 5em;
                     color: #fff;
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: italic;
+
+                    @media (max-width: 900px) {
+                        font-size: 9vw;
+                    }
                 }
 
                 & button {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 12rem;
-                    height: 3rem;
+                    width: 10rem;
+                    height: 2.8rem;
                     border: solid 3px black;
                     border-radius: 0.8rem;
                     background: rgba(255, 255, 255, 0);
                     font-size: 2rem;
+
+                    @media (max-width: 900px) {
+                        font-size: 3.5vw;
+                        width: 18vw;
+                        height: 5vw;
+                    }
 
                     &:hover {
                         background: black;
@@ -145,10 +156,6 @@
 
         @media (max-width: 700px) {
 
-            .section-container {
-                height: 120em;
-            }
-
             .picture-container {
                 flex-direction: column;
             }
@@ -157,7 +164,8 @@
         @media (max-height: 720px) {
 
             .section-container {
-                height: 100vh;
+                height: 90vh;
+                max-height: 90vh;
             }
         }
 
