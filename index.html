@@ -45,6 +45,21 @@
             }
         }
 
+        .header-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background-color: #e0e8ec;
+            transition: height 0.3s;
+            height: 8vh;
+        }
+
+        .header-smaller {
+            height: 4vh;
+            background-color: rgba(224, 232, 236, 90%);
+        }
+
         .section-container {
             display: flex;
             background-color: #c7d0d9;
@@ -68,19 +83,17 @@
             flex-basis: 0;
             flex-grow: 1;
             position: relative;
+            transition: 500ms ease;
 
             & img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                transition: 500ms ease;
-                z-index: auto;
-
-                &:hover {
-                    transform: scale(1.03);
-                    transition: 300ms ease;
-                    z-index: 1;
-                }
+            }
+            &:hover {
+                transform: scale(1.03);
+                transition: 300ms ease;
+                z-index: 1;
             }
 
             & div {
@@ -138,6 +151,7 @@
                         background: black;
                         color: white;
                     }
+
                 }
             }
         }
@@ -207,12 +221,21 @@
             }
         }
 
-
     </style>
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".head-container");
 
+            if (window.scrollY > 0) {
+                header.classList.add("header-smaller");
+            } else {
+                header.classList.remove("header-smaller");
+            }
+        });
+    </script>
 </head>
 <body>
-<header class="head-container">
+<header class="head-container header-sticky">
     <div>
         <img src="images/sunset.svg" alt="Logo der Seite">
         <nav>
