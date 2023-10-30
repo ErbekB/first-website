@@ -6,9 +6,12 @@
     <title>Sport</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
+
+
         .head-container {
             display: flex;
-            background-color: #024059;
+            background-color: #e0e8ec;
+
             justify-content: center;
             align-items: center;
             height: 8vh;
@@ -26,6 +29,7 @@
                     width: 25%;
                     min-width: 150px;
                 }
+
                 &:active{
                     transform: rotate(1turn) scale(120%) translateX(200px);
                 }
@@ -35,6 +39,7 @@
                 justify-content: end;
                 align-items: end;
                 margin-right: 1em;
+
                 @media (max-width: 700px) {
                     display: none;
                     flex-direction: column;
@@ -45,7 +50,9 @@
                     transition: 250ms ease;
                     &:hover {
                         transform: translateY(-5px);
+
                         color: #024059;
+
                     }
                 }
             }
@@ -61,23 +68,25 @@
             @media (max-width: 700px) {
                 height: 4vh;
             }
+
         }
         .header-smaller {
             height: 4vh;
             background-color: rgba(224, 232, 236, 90%);
+
             @media (max-width: 700px) {
                 height: initial;
             }
         }
         .section-container {
             display: flex;
-            background-color: #124C59;
+            background-color: #c7d0d9;
             justify-content: center;
             height: 90vh;
         }
         .picture-container {
             display: flex;
-            background-color: #124C59;
+            background-color: #BDD684;
             max-width: 1500px;
             flex-grow: 1;
             flex-basis: 0;
@@ -96,6 +105,7 @@
                 width: 100%;
                 object-fit: cover;
             }
+
             &:hover {
                 transform: scale(1.03);
                 transition: 300ms ease;
@@ -123,6 +133,7 @@
                     @media (max-width: 700px) {
                         font-size: 12vw;
                     }
+                  
                     @media (max-width: 350px) {
                         font-size: 16vw;
                     }
@@ -133,10 +144,13 @@
                     align-items: center;
                     width: 10rem;
                     height: 2.8rem;
+
                     /*border: solid 3px black;*/
+
                     border-radius: 0.8rem;
-                    background: #D9C355;
+                    background: rgba(255, 255, 255, 0);
                     font-size: 2rem;
+
                     @media (max-width: 900px) and (min-width: 701px) {
                         font-size: 3.5vw;
                         width: 18vw;
@@ -154,7 +168,9 @@
                     }
                     &:hover {
                         background: black;
+
                         color: #D9C355;
+
                     }
                 }
             }
@@ -167,6 +183,7 @@
             @media (max-width: 700px) {
                 height: 2300px;
             }
+
             & div {
                 display: flex;
                 flex-direction: column;
@@ -192,6 +209,7 @@
                         font-size: 7vw;
                     }
                 }
+
                 & div {
                     display: flex;
                     flex-direction: row;
@@ -207,6 +225,7 @@
                             text-align: center;
                         }
                     }
+
                     & img {
                         width: 50%;
                         object-fit: cover;
@@ -239,6 +258,7 @@
     <script>
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".head-container");
+
             if (screen.width > 700) {
                 if (window.scrollY > 0) {
                     header.classList.add("header-smaller");
@@ -254,10 +274,12 @@
     <div>
         <img src="images/logo.svg" alt="Logo der Seite">
         <nav>
-            <a href="index.html">Start</a>
+            <a href="Start.asp">Start</a>
             <a href="Rücken.asp">Rücken</a>
             <a href="ilia/yoga.html">Yoga</a>
             <a href="Nacken.asp">Nacken</a>
+            <a href="Über uns.asp">Über uns</a>
+            <a href="Kontakt.asp">Kontakt</a>
         </nav>
     </div>
 </header>
