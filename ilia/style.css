@@ -54,51 +54,6 @@ header ul a {
   font-size: 0.83rem;
 }
 
-/*.hamburger {*/
-/*  padding-left: 1.5rem;*/
-/*}*/
-
-/*.hamburger a {*/
-/*  padding: 0;*/
-/*  width: 37px;*/
-/*  height: 37px;*/
-/*  display: flex;*/
-/*  border-radius: 50%;*/
-/*  background-color: rgba(115, 115, 115, 0.7);*/
-/*  backdrop-filter: blur(10px);*/
-/*  -webkit-backdrop-filter: blur(10px);*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
-
-/*.hamburger .bar {*/
-/*  position: relative;*/
-/*  width: 52%;*/
-/*  height: 1.3px;*/
-/*  background-color: #fff;*/
-/*  border-radius: 2px;*/
-/*}*/
-
-/*.hamburger .bar::before,*/
-/*.hamburger .bar::after {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  left: 50%;*/
-/*  transform: translateX(-50%);*/
-/*  width: 60%;*/
-/*  height: 100%;*/
-/*  background-color: inherit;*/
-/*  border-radius: 2px;*/
-/*}*/
-
-/*.hamburger .bar::before {*/
-/*  top: -4.5px;*/
-/*}*/
-
-/*.hamburger .bar::after {*/
-/*  top: 4.5px;*/
-/*}*/
-
 main {
   position: relative;
   height: 100vh;
@@ -139,7 +94,6 @@ main {
   position: absolute;
   z-index: 5;
   top: 63.95%;
-  /*width: 32.63%;*/
   left: 18.3%;
   width: 25em;
 }
@@ -190,7 +144,6 @@ main {
   position: absolute;
   z-index: 12;
   top: 80.86%;
-  /*width: 43.4%;*/
   left: 59%;
   width: 20em;
 }
@@ -208,7 +161,6 @@ main {
   z-index: 3;
   top: 40%;
   left: 30%;
-  /*width: 32.22%;*/
   width: 15em;
 
 }
@@ -217,7 +169,6 @@ main {
   position: absolute;
   z-index: 14;
   top: 60%;
-  /*width: 54.16%;*/
   left: 40%;
   width: 23em;
 }
@@ -225,7 +176,6 @@ main {
 .katze-runter {
   position: absolute;
   z-index: 3;
-  /*width: 37.36%;*/
   top: 50%;
   left: 95%;
   width: 7em;
@@ -235,7 +185,6 @@ main {
   position: absolute;
   z-index: 10;
   top: 57.4%;
-  /*width: 28.33%;*/
   left: 90.97%;
   width: 30em;
 }
@@ -256,7 +205,6 @@ main {
   z-index: 17;
   top: 69.01%;
   left: 78.61%;
-  /*width: 47.91%;*/
   width: 20em;
   brightness(50%);
 
@@ -266,7 +214,6 @@ main {
   position: absolute;
   z-index: 3;
   top: 45%;
-  /*width: 71.52%;*/
   left: 67.84%;
   width: 20em;
 }
@@ -275,7 +222,6 @@ main {
   position: absolute;
   z-index: 3;
   top: 40%;
-  /*width: 56.25%;*/
   left: 16%;
   width: 10em;
 }
@@ -363,15 +309,6 @@ main {
     padding: 0 0.9rem;
   }
 
-  /*.hamburger {*/
-  /*  padding-left: 0.9rem;*/
-  /*}*/
-
-  /*.hamburger a {*/
-  /*  height: 30px;*/
-  /*  width: 30px;*/
-  /*}*/
-
   .bg-img {
     width: initial;
     height: 208.1%;
@@ -384,7 +321,6 @@ main {
 
   .katze-oben {
     width: 7em;
-    /*height: 77.59%;*/
   }
 
   .fog-6 {
@@ -393,7 +329,6 @@ main {
   }
 
   .mann {
-
     top: 55%;
     left: 40%;
     width: 20em;
@@ -403,7 +338,6 @@ main {
     z-index: 3;
     top: 30%;
     left: 95%;
-    /*width: 47.91%;*/
     width: 12em;
   }
 
@@ -416,14 +350,12 @@ main {
     width: 6em;
     top: 40%;
     left: 70%;
-    /*height: 72.26%;*/
   }
 
   .frau-vertical {
     width: 23em;
     top: 60%;
     left: 20%;
-    /*height: 56.78%;*/
   }
 
   .fog-4 {
@@ -433,8 +365,6 @@ main {
 
   .hund {
     display: none;
-    width: initial;
-    height: 60.64%;
   }
 
   .fog-3 {
@@ -444,13 +374,10 @@ main {
 
   .frau-mit-fuss {
     display: none;
-    /*width: initial;*/
-    /*height: 71.42%;*/
   }
 
   .mann-sitzend-recht {
     top: 70%;
-    /*width: 28.33%;*/
     left: 70%;
     width: 28em;
   }
@@ -466,8 +393,6 @@ main {
 
   .frau-weit {
     display: none;
-    /*width: initial;*/
-    /*height: 100.03%;*/
   }
 
   .fog-1 {
