@@ -13,7 +13,7 @@ body {
 }
 
 ::selection {
-  background-color: #124C59;;
+  background-color: #124C59;
 }
 
 .logo {
@@ -53,51 +53,6 @@ header ul a {
   font-weight: 300;
   font-size: 0.83rem;
 }
-
-/*.hamburger {*/
-/*  padding-left: 1.5rem;*/
-/*}*/
-
-/*.hamburger a {*/
-/*  padding: 0;*/
-/*  width: 37px;*/
-/*  height: 37px;*/
-/*  display: flex;*/
-/*  border-radius: 50%;*/
-/*  background-color: rgba(115, 115, 115, 0.7);*/
-/*  backdrop-filter: blur(10px);*/
-/*  -webkit-backdrop-filter: blur(10px);*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
-
-/*.hamburger .bar {*/
-/*  position: relative;*/
-/*  width: 52%;*/
-/*  height: 1.3px;*/
-/*  background-color: #fff;*/
-/*  border-radius: 2px;*/
-/*}*/
-
-/*.hamburger .bar::before,*/
-/*.hamburger .bar::after {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  left: 50%;*/
-/*  transform: translateX(-50%);*/
-/*  width: 60%;*/
-/*  height: 100%;*/
-/*  background-color: inherit;*/
-/*  border-radius: 2px;*/
-/*}*/
-
-/*.hamburger .bar::before {*/
-/*  top: -4.5px;*/
-/*}*/
-
-/*.hamburger .bar::after {*/
-/*  top: 4.5px;*/
-/*}*/
 
 main {
   position: relative;
@@ -139,7 +94,6 @@ main {
   position: absolute;
   z-index: 5;
   top: 63.95%;
-  /*width: 32.63%;*/
   left: 18.3%;
   width: 25em;
 }
@@ -190,7 +144,6 @@ main {
   position: absolute;
   z-index: 12;
   top: 80.86%;
-  /*width: 43.4%;*/
   left: 59%;
   width: 20em;
 }
@@ -208,7 +161,6 @@ main {
   z-index: 3;
   top: 40%;
   left: 30%;
-  /*width: 32.22%;*/
   width: 15em;
 
 }
@@ -217,25 +169,22 @@ main {
   position: absolute;
   z-index: 14;
   top: 60%;
-  /*width: 54.16%;*/
   left: 40%;
   width: 23em;
 }
 
 .katze-runter {
   position: absolute;
-  z-index: 8;
-  /*width: 37.36%;*/
-  top: 40%;
-  left: 90%;
-  width: 10em;
+  z-index: 3;
+  top: 50%;
+  left: 95%;
+  width: 7em;
 }
 
 .mann-sitzend-recht {
   position: absolute;
   z-index: 10;
   top: 57.4%;
-  /*width: 28.33%;*/
   left: 90.97%;
   width: 30em;
 }
@@ -256,27 +205,25 @@ main {
   z-index: 17;
   top: 69.01%;
   left: 78.61%;
-  /*width: 47.91%;*/
   width: 20em;
+  brightness(50%);
 
 }
 
 .frau-weit {
   position: absolute;
   z-index: 3;
-  top: 30%;
-  /*width: 71.52%;*/
+  top: 45%;
   left: 67.84%;
   width: 20em;
 }
 
 .katze-oben {
   position: absolute;
-  z-index: 6;
-  top: 30%;
-  /*width: 56.25%;*/
+  z-index: 3;
+  top: 40%;
   left: 16%;
-  width: 15em;
+  width: 10em;
 }
 
 .frau-sitzend {
@@ -291,7 +238,7 @@ main {
   position: absolute;
   z-index: 19;
   top: 0;
-  right: 0%;
+  right: 0;
   width: 41.31%;
   pointer-events: none;
 }
@@ -300,7 +247,7 @@ main {
   position: absolute;
   z-index: 20;
   bottom: 0;
-  right: 0%;
+  right: 0;
   pointer-events: none;
   width: 100%;
 }
@@ -338,7 +285,7 @@ main {
   }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 700px) {
   .text h1 {
     font-size: 5rem;
     line-height: 1.1;
@@ -354,22 +301,13 @@ main {
   }
 
   .logo {
-    width: 75px;
+    width: 100px;
   }
 
   header ul a {
     font-size: 0.73rem;
     padding: 0 0.9rem;
   }
-
-  /*.hamburger {*/
-  /*  padding-left: 0.9rem;*/
-  /*}*/
-
-  /*.hamburger a {*/
-  /*  height: 30px;*/
-  /*  width: 30px;*/
-  /*}*/
 
   .bg-img {
     width: initial;
@@ -382,8 +320,7 @@ main {
   }
 
   .katze-oben {
-    width: initial;
-    height: 77.59%;
+    width: 7em;
   }
 
   .fog-6 {
@@ -392,13 +329,16 @@ main {
   }
 
   .mann {
-    height: 87.64%;
-    width: initial;
+    top: 55%;
+    left: 40%;
+    width: 20em;
   }
 
   .kind {
-    height: 84.33%;
-    width: initial;
+    z-index: 3;
+    top: 30%;
+    left: 95%;
+    width: 12em;
   }
 
   .fog-5 {
@@ -407,13 +347,15 @@ main {
   }
 
   .katze-runter {
-    width: initial;
-    height: 72.26%;
+    width: 6em;
+    top: 40%;
+    left: 70%;
   }
 
   .frau-vertical {
-    width: initial;
-    height: 56.78%;
+    width: 23em;
+    top: 60%;
+    left: 20%;
   }
 
   .fog-4 {
@@ -422,8 +364,7 @@ main {
   }
 
   .hund {
-    width: initial;
-    height: 60.64%;
+    display: none;
   }
 
   .fog-3 {
@@ -432,13 +373,13 @@ main {
   }
 
   .frau-mit-fuss {
-    width: initial;
-    height: 71.42%;
+    display: none;
   }
 
   .mann-sitzend-recht {
-    width: initial;
-    height: 96.86%;
+    top: 70%;
+    left: 70%;
+    width: 28em;
   }
 
   .fog-2 {
@@ -451,8 +392,7 @@ main {
   }
 
   .frau-weit {
-    width: initial;
-    height: 100.03%;
+    display: none;
   }
 
   .fog-1 {
@@ -461,7 +401,7 @@ main {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .text h1 {
     font-size: 3.3rem;
   }
