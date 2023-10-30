@@ -22,13 +22,18 @@
             }
 
             & img {
-                width: 200px;
+                width: 250px;
                 margin-right: auto;
                 margin-left: 5%;
+                transition: 250ms ease;
 
                 @media (max-width: 700px) {
                     width: 25%;
                     min-width: 150px;
+                }
+
+                &:active{
+                    transform: rotate(1turn) scale(120%) translateX(200px);
                 }
             }
 
@@ -357,7 +362,6 @@
                 unseren Übungen und erfahren Sie die Vorteile einer natürlichen Entspannung, die Ihren
                 Arbeitstag verbessern wird.
             </p>
-
         </div>
         <h2>Unser Fokus</h2>
         <div>
