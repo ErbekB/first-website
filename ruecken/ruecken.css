@@ -14,14 +14,14 @@
     align-items: center;
 }
 .ueberschriftBox{
-    border: 1px solid red;
+
     display: flex;
     max-width: 900px;
     align-items: center;
 
 }
 .uebungBox {
-    border: 1px solid red;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,11 +32,11 @@
     }
 }
 .uebungBild{
-    border: 1px solid red;
+
     width: 450px;
 }
 .uebungTxtBox{
-    border: 1px solid red;
+
     width: 450px;
 }
 
