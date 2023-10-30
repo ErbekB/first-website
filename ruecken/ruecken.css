@@ -1,0 +1,47 @@
+#teaser{
+    width: 100%;
+    height: 300px;
+}
+#teaser img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.halfBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ueberschriftBox{
+    border: 1px solid red;
+    display: flex;
+    max-width: 900px;
+    align-items: center;
+
+}
+.uebungBox {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+.uebungBild{
+    border: 1px solid red;
+    width: 450px;
+}
+.uebungTxtBox{
+    border: 1px solid red;
+    width: 450px;
+}
+
+@media screen and (min-width: 800px){
+    #teaser{
+        height: 300px;
+    }
+}
