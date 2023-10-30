@@ -3,14 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sport</title>
+    <title>SportPause</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
     <style>
-
+        .logo {
+            width: 200px;
+        }
         .head-container {
             display: flex;
-            background-color: #e0e8ec;
+            background-color: #124C59;
             justify-content: center;
             align-items: center;
             height: 8vh;
@@ -34,12 +36,12 @@
                 & a {
                     display: flex;
                     margin: 0 0.7em 20px;
-                    color: #383838;
+                    color: white;
                     transition: 250ms ease;
 
                     &:hover {
                         transform: translateY(-5px);
-                        color: green;
+                        color: #F2E085;
                     }
                 }
             }
@@ -67,14 +69,14 @@
 
         .section-container {
             display: flex;
-            background-color: #c7d0d9;
+            background-color: #124C59;
             justify-content: center;
             height: 90vh;
         }
 
         .picture-container {
             display: flex;
-            background-color: #BDD684;
+            background-color: #124C59;
             max-width: 1500px;
             flex-grow: 1;
             flex-basis: 0;
@@ -118,6 +120,7 @@
                 & h2 {
                     font-size: 5em;
                     color: #fff;
+ 
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: italic;
 
@@ -134,12 +137,15 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
                     width: 10rem;
                     height: 2.8rem;
                     border: solid 3px black;
+
                     border-radius: 0.8rem;
-                    background: rgba(255, 255, 255, 0);
+                    background: #D9C355;
                     font-size: 2rem;
+                    font-weight: bold;
 
                     @media (max-width: 900px) and (min-width: 701px) {
                         font-size: 3.5vw;
@@ -154,7 +160,7 @@
 
                     &:hover {
                         background: black;
-                        color: white;
+                        color: #F2E085;
                     }
 
                 }
@@ -163,7 +169,9 @@
 
         .article-container {
             display: flex;
+
             background-color: #000000;
+
             justify-content: center;
 
             & div {
@@ -175,6 +183,7 @@
                 & h1 {
                     font-size: 5em;
                     color: #fff;
+
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: italic;
 
@@ -268,14 +277,12 @@
 <body>
 <header class="head-container header-sticky">
     <div>
-        <img src="images/sunset.svg" alt="Logo der Seite">
+        <img src="images/logo.png" alt="Logo der Seite" class="logo">
         <nav>
-            <a href="Start.asp">Start</a>
+            <a href="index.html">Start</a>
             <a href="Rücken.asp">Rücken</a>
+            <a href="ilia/index.html">Yoga</a>
             <a href="Nacken.asp">Nacken</a>
-            <a href="Beine.asp">Beine</a>
-            <a href="Über uns.asp">Über uns</a>
-            <a href="Kontakt.asp">Kontakt</a>
         </nav>
     </div>
 </header>
@@ -293,8 +300,10 @@
         <div class="picture">
             <img src="images/yoga.jpg" alt="yoga">
             <div>
-                <h2>Beine</h2>
+                <h2>Yoga</h2>
+                <a href="ilia/index.html">
                 <button>Erkunde</button>
+                </a>
             </div>
         </div>
         <div class="picture">
