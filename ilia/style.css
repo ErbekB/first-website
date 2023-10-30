@@ -224,11 +224,11 @@ main {
 
 .katze-runter {
   position: absolute;
-  z-index: 8;
+  z-index: 3;
   /*width: 37.36%;*/
-  top: 40%;
-  left: 90%;
-  width: 10em;
+  top: 50%;
+  left: 95%;
+  width: 7em;
 }
 
 .mann-sitzend-recht {
@@ -258,13 +258,14 @@ main {
   left: 78.61%;
   /*width: 47.91%;*/
   width: 20em;
+  brightness(50%);
 
 }
 
 .frau-weit {
   position: absolute;
   z-index: 3;
-  top: 30%;
+  top: 45%;
   /*width: 71.52%;*/
   left: 67.84%;
   width: 20em;
@@ -272,11 +273,11 @@ main {
 
 .katze-oben {
   position: absolute;
-  z-index: 6;
-  top: 30%;
+  z-index: 3;
+  top: 40%;
   /*width: 56.25%;*/
   left: 16%;
-  width: 15em;
+  width: 10em;
 }
 
 .frau-sitzend {
@@ -338,7 +339,7 @@ main {
   }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 700px) {
   .text h1 {
     font-size: 5rem;
     line-height: 1.1;
@@ -354,7 +355,7 @@ main {
   }
 
   .logo {
-    width: 75px;
+    width: 100px;
   }
 
   header ul a {
@@ -382,8 +383,8 @@ main {
   }
 
   .katze-oben {
-    width: initial;
-    height: 77.59%;
+    width: 7em;
+    /*height: 77.59%;*/
   }
 
   .fog-6 {
@@ -392,13 +393,18 @@ main {
   }
 
   .mann {
-    height: 87.64%;
-    width: initial;
+
+    top: 55%;
+    left: 40%;
+    width: 20em;
   }
 
   .kind {
-    height: 84.33%;
-    width: initial;
+    z-index: 3;
+    top: 30%;
+    left: 95%;
+    /*width: 47.91%;*/
+    width: 12em;
   }
 
   .fog-5 {
@@ -407,13 +413,17 @@ main {
   }
 
   .katze-runter {
-    width: initial;
-    height: 72.26%;
+    width: 6em;
+    top: 40%;
+    left: 70%;
+    /*height: 72.26%;*/
   }
 
   .frau-vertical {
-    width: initial;
-    height: 56.78%;
+    width: 23em;
+    top: 60%;
+    left: 20%;
+    /*height: 56.78%;*/
   }
 
   .fog-4 {
@@ -422,6 +432,7 @@ main {
   }
 
   .hund {
+    display: none;
     width: initial;
     height: 60.64%;
   }
@@ -432,13 +443,16 @@ main {
   }
 
   .frau-mit-fuss {
-    width: initial;
-    height: 71.42%;
+    display: none;
+    /*width: initial;*/
+    /*height: 71.42%;*/
   }
 
   .mann-sitzend-recht {
-    width: initial;
-    height: 96.86%;
+    top: 70%;
+    /*width: 28.33%;*/
+    left: 70%;
+    width: 28em;
   }
 
   .fog-2 {
@@ -451,8 +465,9 @@ main {
   }
 
   .frau-weit {
-    width: initial;
-    height: 100.03%;
+    display: none;
+    /*width: initial;*/
+    /*height: 100.03%;*/
   }
 
   .fog-1 {
@@ -461,7 +476,7 @@ main {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .text h1 {
     font-size: 3.3rem;
   }
