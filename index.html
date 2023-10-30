@@ -22,18 +22,23 @@
             }
 
             & img {
-                font-size: 100em;
+                width: 200px;
                 margin-right: auto;
+                margin-left: 5%;
+
+                @media (max-width: 700px) {
+                    width: 25%;
+                }
             }
 
             & nav {
                 display: flex;
+                justify-content: end;
                 align-items: end;
                 margin-right: 1em;
 
                 & a {
-                    display: flex;
-                    margin: 0 0.7em 20px;
+                    margin: 0 0.7em 0;
                     color: #383838;
                     transition: 250ms ease;
 
@@ -54,15 +59,15 @@
             transition: height 0.3s, background-color 1s;
             height: 8vh;
 
-            @media (max-width: 700px) {
-                position: initial;
-                transition: initial;
-            }
         }
 
         .header-smaller {
             height: 4vh;
             background-color: rgba(224, 232, 236, 90%);
+
+            @media (max-width: 700px) {
+                height: initial;
+            }
         }
 
         .section-container {
@@ -95,6 +100,7 @@
                 width: 100%;
                 object-fit: cover;
             }
+
             &:hover {
                 transform: scale(1.03);
                 transition: 300ms ease;
@@ -215,6 +221,7 @@
 
                         }
                     }
+
                     & img {
                         width: 50%;
                         object-fit: cover;
@@ -257,10 +264,12 @@
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".head-container");
 
-            if (window.scrollY > 0) {
-                header.classList.add("header-smaller");
-            } else {
-                header.classList.remove("header-smaller");
+            if (screen.width > 700) {
+                if (window.scrollY > 0) {
+                    header.classList.add("header-smaller");
+                } else {
+                    header.classList.remove("header-smaller");
+                }
             }
         });
     </script>
@@ -268,7 +277,7 @@
 <body>
 <header class="head-container header-sticky">
     <div>
-        <img src="images/sunset.svg" alt="Logo der Seite">
+        <img src="images/logo.svg" alt="Logo der Seite">
         <nav>
             <a href="Start.asp">Start</a>
             <a href="Rücken.asp">Rücken</a>
