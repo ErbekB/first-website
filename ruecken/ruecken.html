@@ -44,17 +44,9 @@
           }
       }
 
-      .headerBild {
-          margin-top: 24px;
-          margin-bottom: 24px;
-          width: 100%;
-      }
-
-
-
-      sticky-image {
+      .sticky-image {
           position: sticky;
-          top: 60px; /* Höhe Ihrer Navbar */
+          top: 0px; /* Höhe Ihrer Navbar */
           z-index: 99; /* Geringere Z-Index, um unter der Navbar zu bleiben */
       }
   </style>
@@ -63,12 +55,12 @@
 <header class="head-container ">
     <img src="../images/sunset.svg" alt="Logo der Seite">
 </header>
-
   <div id="teaser">
     <img src="../images/ruecken_header.jpg" alt="Frau liegt auf den Rücken">
   </div>
 
-  <div class="head-container ">
+
+  <div class="head-container sticky-image">
     <nav>
       <a href="Start.asp">Start</a>
       <a href="Rücken.asp">Rücken</a>
@@ -79,12 +71,14 @@
     </nav>
   </div>
 
-
+<div class="halfBody">
 <section>
+  <div>
   <h2>Rücken-Übung: Oberkörperneigen</h2>
   <p>Bei dieser bekannten Rücken-Übung kräftigst du deine
     Oberschenkel-Rückseite sowie die Po- und Rücken-Muskulatur mit einer Brücke.
   </p>
+  </div>
   <div class="uebungBox">
     <div>
     <img src="../images/ruecken_oberkoerperneigenwebp.webp" alt="Frau macht Übung Oberkörperneigen im sitzen"
@@ -105,8 +99,10 @@
 </section>
 
 <section>
+  <div>
   <h2>Rücken-Übung: Rumpfbeugen</h2>
   <p>Bei dieser bekannten Rücken-Übung kräftigst du deine untere Rücken-Muskulatur.</p>
+  </div>
   <div class="uebungBox">
     <div>
     <img src="../images/ruecke_rumpfbeugen.webp" alt="Frau mach Übung Rumpfbeugen"
@@ -127,8 +123,10 @@
 </section>
 
 <section>
+  <div>
   <h2>Rücken-Übung: Unterkörperdrehen</h2>
   <p>Übung zur Dehnung der unteren und seitlichen Rücken- sowie der Gesäßmuskulatur</p>
+  </div>
   <div class="uebungBox">
     <div>
     <img src="../images/ruecken_unterkoerperdrehen.webp" alt="Frau macht Übung Unterkörperdrehen"
@@ -149,5 +147,6 @@
     </div>
   </div>
 </section>
+</div>
 </body>
 </html>
