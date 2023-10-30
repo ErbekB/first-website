@@ -3,77 +3,78 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SportPause</title>
+    <title>Sport</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-
     <style>
-        .logo {
-            width: 200px;
-        }
         .head-container {
             display: flex;
-            background-color: #124C59;
+            background-color: #024059;
             justify-content: center;
             align-items: center;
             height: 8vh;
             min-height: 60px;
-
             & div {
                 display: flex;
                 width: 1500px;
             }
-
             & img {
-                font-size: 100em;
+                width: 250px;
                 margin-right: auto;
+                margin-left: 5%;
+                transition: 250ms ease;
+                @media (max-width: 700px) {
+                    width: 25%;
+                    min-width: 150px;
+                }
+                &:active{
+                    transform: rotate(1turn) scale(120%) translateX(200px);
+                }
             }
-
             & nav {
                 display: flex;
+                justify-content: end;
                 align-items: end;
                 margin-right: 1em;
-
+                @media (max-width: 700px) {
+                    display: none;
+                    flex-direction: column;
+                }
                 & a {
-                    display: flex;
-                    margin: 0 0.7em 20px;
-                    color: white;
+                    margin: 0 0.7em 0;
+                    color: #124C59;
                     transition: 250ms ease;
-
                     &:hover {
                         transform: translateY(-5px);
-                        color: #F2E085;
+                        color: #024059;
                     }
                 }
             }
         }
-
         .header-sticky {
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 100;
-            background-color: #e0e8ec;
+            background-color: #D9C355;
             transition: height 0.3s, background-color 1s;
             height: 8vh;
-
             @media (max-width: 700px) {
-                position: initial;
-                transition: initial;
+                height: 4vh;
             }
         }
-
         .header-smaller {
             height: 4vh;
             background-color: rgba(224, 232, 236, 90%);
+            @media (max-width: 700px) {
+                height: initial;
+            }
         }
-
         .section-container {
             display: flex;
             background-color: #124C59;
             justify-content: center;
             height: 90vh;
         }
-
         .picture-container {
             display: flex;
             background-color: #124C59;
@@ -81,7 +82,6 @@
             flex-grow: 1;
             flex-basis: 0;
         }
-
         .picture {
             display: flex;
             flex-direction: column;
@@ -91,7 +91,6 @@
             flex-grow: 1;
             position: relative;
             transition: 500ms ease;
-
             & img {
                 height: 100%;
                 width: 100%;
@@ -102,7 +101,6 @@
                 transition: 300ms ease;
                 z-index: 1;
             }
-
             & div {
                 display: flex;
                 flex-direction: column;
@@ -111,42 +109,34 @@
                 top: 70%;
                 left: auto;
                 z-index: 2;
-
                 @media (max-height: 830px) or (max-width: 700px) {
                     top: auto;
-
                 }
-
                 & h2 {
                     font-size: 5em;
                     color: #fff;
- 
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: italic;
-
                     @media (max-width: 900px) and (min-width: 701px) {
                         font-size: 9vw;
                     }
-
                     @media (max-width: 700px) {
                         font-size: 12vw;
                     }
+                    @media (max-width: 350px) {
+                        font-size: 16vw;
+                    }
                 }
-
                 & button {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
                     width: 10rem;
                     height: 2.8rem;
-                    border: solid 3px black;
-
+                    /*border: solid 3px black;*/
                     border-radius: 0.8rem;
                     background: #D9C355;
                     font-size: 2rem;
-                    font-weight: bold;
-
                     @media (max-width: 900px) and (min-width: 701px) {
                         font-size: 3.5vw;
                         width: 18vw;
@@ -154,122 +144,107 @@
                     }
                     @media (max-width: 700px) {
                         font-size: 5vw;
-                        width: 22vw;
-                        height: 7vw;
+                        width: 25vw;
+                        height: 8vw;
                     }
-
+                    @media (max-width: 350px) {
+                        font-size: 5vw;
+                        width: 30vw;
+                        height: 10vw;
+                    }
                     &:hover {
                         background: black;
-                        color: #F2E085;
+                        color: #D9C355;
                     }
-
                 }
             }
         }
-
         .article-container {
             display: flex;
-
-            background-color: #000000;
-
+            background-color: black;
             justify-content: center;
-
+            height: 1800px;
+            @media (max-width: 700px) {
+                height: 2300px;
+            }
             & div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 max-width: 1200px;
-
                 & h1 {
                     font-size: 5em;
                     color: #fff;
-
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: italic;
-
                     @media (max-width: 700px) {
                         font-size: 13vw;
                     }
                 }
-
                 & h2 {
-                    font-size: 2em;
+                    font-size: 2.5em;
                     font-weight: bold;
-                    margin-top: 1em;
+                    margin-top: 2em;
                     color: #fff;
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: initial;
-
                     @media (max-width: 700px) {
-                        font-size: 5vw;
+                        font-size: 7vw;
                     }
                 }
-
-
                 & div {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     max-width: 1500px;
-
                     & p {
                         color: white;
                         font-size: 1.08em;
                         line-height: 200%;
                         text-align: left;
                         margin: 1em 1em 2em 1em;
-
                         @media (max-width: 700px) {
                             text-align: center;
-
                         }
                     }
                     & img {
                         width: 50%;
                         object-fit: cover;
                         margin: 1em 1em 2em 1em;
-
                         @media (max-width: 700px) {
                             width: 95%;
                         }
                     }
-
                     @media (max-width: 700px) {
                         flex-direction: column;
-
                     }
                 }
             }
         }
-
         @media (max-width: 700px) {
-
             .section-container {
                 height: auto;
             }
-
             .picture-container {
                 flex-direction: column;
             }
         }
-
         @media (max-height: 830px) and (min-width: 700px) {
-
             .section-container {
                 height: 100vh;
                 max-height: 100vh;
             }
         }
-
     </style>
     <script>
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".head-container");
-
-            if (window.scrollY > 0) {
-                header.classList.add("header-smaller");
-            } else {
-                header.classList.remove("header-smaller");
+            if (screen.width > 700) {
+                if (window.scrollY > 0) {
+                    header.classList.add("header-smaller");
+                } else {
+                    header.classList.remove("header-smaller");
+                }
             }
         });
     </script>
@@ -277,7 +252,7 @@
 <body>
 <header class="head-container header-sticky">
     <div>
-        <img src="images/logo.png" alt="Logo der Seite" class="logo">
+        <img src="images/logo.svg" alt="Logo der Seite">
         <nav>
             <a href="index.html">Start</a>
             <a href="Rücken.asp">Rücken</a>
@@ -286,7 +261,6 @@
         </nav>
     </div>
 </header>
-
 
 <section class="section-container">
     <div class="picture-container">
@@ -301,9 +275,7 @@
             <img src="images/yoga.jpg" alt="yoga">
             <div>
                 <h2>Yoga</h2>
-                <a href="ilia/yoga.html">
                 <button>Erkunde</button>
-                </a>
             </div>
         </div>
         <div class="picture">
@@ -313,30 +285,26 @@
                 <button>Erkunde</button>
             </div>
         </div>
-
     </div>
 </section>
-
 
 <article class="article-container">
     <div>
         <h1>Info</h1>
-        <h2>Über Sunset-Fitness</h2>
+        <h2>Über Sportpause</h2>
         <div>
             <img src="images/green_yoga.png" alt="Yoga im grünen Wald">
             <p>
-                Willkommen auf Sunset, Ihrer Quelle für natürliche Entspannung während des Arbeitstags.
+                Willkommen auf Sportpause, Ihrer Quelle für natürliche Entspannung während des Arbeitstags.
                 Wir wissen, wie leicht es passiert, dass man sich in der hektischen Arbeitswelt verliert
                 und die eigenen körperlichen Bedürfnisse aus den Augen verliert. Genau deshalb haben wir
                 diese Seite geschaffen – um Ihnen einfache und effektive Übungen zur Verfügung zu stellen,
                 die Sie in kurzen Pausen direkt am Schreibtisch durchführen können.<br>
-
                 Ihre Gesundheit und Ihr Wohlbefinden sind uns wichtig, und wir laden Sie ein, sich regelmäßig
                 eine kleine Pause zu gönnen, um sich selbst zu revitalisieren. Beginnen Sie noch heute mit
                 unseren Übungen und erfahren Sie die Vorteile einer natürlichen Entspannung, die Ihren
                 Arbeitstag verbessern wird.
             </p>
-
         </div>
         <h2>Unser Fokus</h2>
         <div>
@@ -351,12 +319,9 @@
         </div>
     </div>
 </article>
-
 <footer>
     <div>
-
     </div>
 </footer>
-
 </body>
 </html>
