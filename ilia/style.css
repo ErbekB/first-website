@@ -13,7 +13,7 @@ body {
 }
 
 ::selection {
-  background-color: #124C59;;
+  background-color: #124C59;
 }
 
 .logo {
@@ -238,7 +238,7 @@ main {
   position: absolute;
   z-index: 19;
   top: 0;
-  right: 0%;
+  right: 0;
   width: 41.31%;
   pointer-events: none;
 }
@@ -247,7 +247,7 @@ main {
   position: absolute;
   z-index: 20;
   bottom: 0;
-  right: 0%;
+  right: 0;
   pointer-events: none;
   width: 100%;
 }
