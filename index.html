@@ -28,6 +28,7 @@
 
                 @media (max-width: 700px) {
                     width: 25%;
+                    min-width: 150px;
                 }
             }
 
@@ -58,6 +59,10 @@
             background-color: #e0e8ec;
             transition: height 0.3s, background-color 1s;
             height: 8vh;
+
+            @media (max-width: 700px) {
+                height: 4vh;
+            }
 
         }
 
@@ -171,6 +176,11 @@
             display: flex;
             background-color: #000000;
             justify-content: center;
+            height: 1800px;
+
+            @media (max-width: 700px) {
+                height: 2300px;
+            }
 
             & div {
                 display: flex;
@@ -190,18 +200,17 @@
                 }
 
                 & h2 {
-                    font-size: 2em;
+                    font-size: 2.5em;
                     font-weight: bold;
-                    margin-top: 1em;
+                    margin-top: 2em;
                     color: #fff;
                     font-family: "Times New Roman", "Castellar", fantasy;
                     font-style: initial;
 
                     @media (max-width: 700px) {
-                        font-size: 5vw;
+                        font-size: 7vw;
                     }
                 }
-
 
                 & div {
                     display: flex;
@@ -218,7 +227,6 @@
 
                         @media (max-width: 700px) {
                             text-align: center;
-
                         }
                     }
 
@@ -321,11 +329,11 @@
 <article class="article-container">
     <div>
         <h1>Info</h1>
-        <h2>Über Sunset-Fitness</h2>
+        <h2>Über Sportpause</h2>
         <div>
             <img src="images/green_yoga.png" alt="Yoga im grünen Wald">
             <p>
-                Willkommen auf Sunset, Ihrer Quelle für natürliche Entspannung während des Arbeitstags.
+                Willkommen auf Sportpause, Ihrer Quelle für natürliche Entspannung während des Arbeitstags.
                 Wir wissen, wie leicht es passiert, dass man sich in der hektischen Arbeitswelt verliert
                 und die eigenen körperlichen Bedürfnisse aus den Augen verliert. Genau deshalb haben wir
                 diese Seite geschaffen – um Ihnen einfache und effektive Übungen zur Verfügung zu stellen,
