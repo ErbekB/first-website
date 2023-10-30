@@ -38,6 +38,10 @@
                 align-items: end;
                 margin-right: 1em;
 
+                @media (max-width: 700px) {
+                    display: none;
+                    flex-direction: column;
+                }
                 & a {
                     margin: 0 0.7em 0;
                     color: #383838;
@@ -139,6 +143,10 @@
                     @media (max-width: 700px) {
                         font-size: 12vw;
                     }
+
+                    @media (max-width: 350px) {
+                        font-size: 16vw;
+                    }
                 }
 
                 & button {
@@ -159,8 +167,13 @@
                     }
                     @media (max-width: 700px) {
                         font-size: 5vw;
-                        width: 22vw;
-                        height: 7vw;
+                        width: 25vw;
+                        height: 8vw;
+                    }
+                    @media (max-width: 350px) {
+                        font-size: 5vw;
+                        width: 30vw;
+                        height: 10vw;
                     }
 
                     &:hover {
