@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", "Calibri", fantasy;
+}
+
+::selection {
+  background-color: #124C59;
+}
+
+.logo {
+  width: 150px;
+}
+
+header {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  padding: 0.9rem 0;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #124C59;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.83rem;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.parallax {
+  pointer-events: none;
+  transition: none;
+}
+
+.bg-img {
+  position: absolute;
+  width: 194.44%;
+  top: 1.86%;
+  left: 50.69%;
+  z-index: 1;
+}
+
+.fog-7 {
+  position: absolute;
+  z-index: 2;
+  top: 37.7%;
+  left: 70.8%;
+  width: 132%;
+}
+
+.fog-6 {
+  position: absolute;
+  z-index: 4;
+  top: 62.09%;
+  left: 50.4%;
+  width: 129.3%;
+}
+
+.mann {
+  position: absolute;
+  z-index: 5;
+  top: 63.95%;
+  left: 18.3%;
+  width: 25em;
+}
+
+
+.fog-5 {
+  position: absolute;
+  z-index: 7;
+  top: 69.7%;
+  left: 51.3%;
+  width: 31.25%;
+}
+
+.text {
+  position: absolute;
+  z-index: 9;
+  top: 34%;
+  left: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #124C59;
+  pointer-events: auto;
+
+}
+
+.text h2 {
+  color: #D9C355;
+  font-weight: 100;
+  font-size: 6.8rem;
+  line-height: 0.88;
+}
+
+.text h1 {
+  font-weight: 800;
+  line-height: 0.88;
+  font-size: 8.7rem;
+}
+
+.fog-4 {
+  position: absolute;
+  z-index: 11;
+  top: 77.7%;
+  left: 45.84%;
+  width: 40.27%;
+}
+
+.hund {
+  position: absolute;
+  z-index: 12;
+  top: 80.86%;
+  left: 59%;
+  width: 20em;
+}
+
+.fog-3 {
+  position: absolute;
+  z-index: 13;
+  top: 63.58%;
+  left: 48.27%;
+  width: 107.63%;
+}
+
+.frau-mit-fuss {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  left: 30%;
+  width: 15em;
+
+}
+
+.frau-vertical {
+  position: absolute;
+  z-index: 14;
+  top: 60%;
+  left: 40%;
+  width: 23em;
+}
+
+.katze-runter {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 95%;
+  width: 7em;
+}
+
+.mann-sitzend-recht {
+  position: absolute;
+  z-index: 10;
+  top: 57.4%;
+  left: 90.97%;
+  width: 30em;
+}
+
+
+
+.fog-2 {
+  position: absolute;
+  z-index: 16;
+  top: 68.14%;
+  left: 48%;
+  width: 108.33%;
+}
+
+
+.kind {
+  position: absolute;
+  z-index: 17;
+  top: 69.01%;
+  left: 78.61%;
+  width: 20em;
+  brightness(50%);
+
+}
+
+.frau-weit {
+  position: absolute;
+  z-index: 3;
+  top: 45%;
+  left: 67.84%;
+  width: 20em;
+}
+
+.katze-oben {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  left: 16%;
+  width: 10em;
+}
+
+.frau-sitzend {
+  position: absolute;
+  z-index: 18;
+  top: 80%;
+  left: 8.27%;
+  width: 30em;
+}
+
+.sun-rays {
+  position: absolute;
+  z-index: 19;
+  top: 0;
+  right: 0;
+  width: 41.31%;
+  pointer-events: none;
+}
+
+.black-shadow {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  width: 100%;
+}
+
+.fog-1 {
+  position: absolute;
+  z-index: 21;
+  top: 59.26%;
+  left: 50.69%;
+  width: 111.8%;
+}
+
+.vignette {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 65%,
+    rgba(0, 0, 0, 0.7)
+  );
+  pointer-events: none;
+}
+
+@media (max-width: 1100px) {
+  .text h1 {
+    font-size: 5.8rem;
+  }
+
+  .text h2 {
+    font-size: 4.7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .text h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+  }
+
+  .text h2 {
+    font-size: 4.1rem;
+    line-height: 1.1;
+  }
+
+  header nav {
+    padding: 0 1rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  header ul a {
+    font-size: 0.73rem;
+    padding: 0 0.9rem;
+  }
+
+  .bg-img {
+    width: initial;
+    height: 208.1%;
+  }
+
+  .fog-7 {
+    width: initial;
+    height: 146.17%;
+  }
+
+  .katze-oben {
+    width: 7em;
+  }
+
+  .fog-6 {
+    width: initial;
+    height: 73.11%;
+  }
+
+  .mann {
+    top: 55%;
+    left: 40%;
+    width: 20em;
+  }
+
+  .kind {
+    z-index: 3;
+    top: 30%;
+    left: 95%;
+    width: 12em;
+  }
+
+  .fog-5 {
+    width: initial;
+    height: 54.16%;
+  }
+
+  .katze-runter {
+    width: 6em;
+    top: 40%;
+    left: 70%;
+  }
+
+  .frau-vertical {
+    width: 23em;
+    top: 60%;
+    left: 20%;
+  }
+
+  .fog-4 {
+    width: initial;
+    height: 104.5%;
+  }
+
+  .hund {
+    display: none;
+  }
+
+  .fog-3 {
+    width: initial;
+    height: 90.78%;
+  }
+
+  .frau-mit-fuss {
+    display: none;
+  }
+
+  .mann-sitzend-recht {
+    top: 70%;
+    left: 70%;
+    width: 28em;
+  }
+
+  .fog-2 {
+    width: initial;
+    height: 84.73%;
+  }
+
+  .frau-sitzend {
+    display: none;
+  }
+
+  .frau-weit {
+    display: none;
+  }
+
+  .fog-1 {
+    width: initial;
+    height: 89.86%;
+  }
+}
+
+@media (max-width: 500px) {
+  .text h1 {
+    font-size: 3.3rem;
+  }
+
+  .text h2 {
+    font-size: 2.6rem;
+  }
+}
