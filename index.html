@@ -47,11 +47,31 @@
             }
         }
 
+        .header-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background-color: #e0e8ec;
+            transition: height 0.3s, background-color 1s;
+            height: 8vh;
+
+            @media (max-width: 700px) {
+                position: initial;
+                transition: initial;
+            }
+        }
+
+        .header-smaller {
+            height: 4vh;
+            background-color: rgba(224, 232, 236, 90%);
+        }
+
         .section-container {
             display: flex;
             background-color: #124C59;
             justify-content: center;
-            height: 80vh;
+            height: 90vh;
         }
 
         .picture-container {
@@ -70,19 +90,17 @@
             flex-basis: 0;
             flex-grow: 1;
             position: relative;
+            transition: 500ms ease;
 
             & img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                transition: 500ms ease;
-                z-index: auto;
-
-                &:hover {
-                    transform: scale(1.03);
-                    transition: 300ms ease;
-                    z-index: 1;
-                }
+            }
+            &:hover {
+                transform: scale(1.03);
+                transition: 300ms ease;
+                z-index: 1;
             }
 
             & div {
@@ -94,59 +112,132 @@
                 left: auto;
                 z-index: 2;
 
-                @media (max-height: 720px) or (max-width: 700px) {
+                @media (max-height: 830px) or (max-width: 700px) {
                     top: auto;
 
                 }
 
                 & h2 {
-                    font-size: 5rem;
+                    font-size: 5em;
                     color: #fff;
-                    font-family: "Arial", "Calibri", fantasy;
-                    /*font-style: italic;*/
+ 
+                    font-family: "Times New Roman", "Castellar", fantasy;
+                    font-style: italic;
+
+                    @media (max-width: 900px) and (min-width: 701px) {
+                        font-size: 9vw;
+                    }
+
+                    @media (max-width: 700px) {
+                        font-size: 12vw;
+                    }
                 }
 
                 & button {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 12rem;
-                    height: 3rem;
-                    border: hidden 3px white;
+
+                    width: 10rem;
+                    height: 2.8rem;
+                    border: solid 3px black;
+
                     border-radius: 0.8rem;
                     background: #D9C355;
                     font-size: 2rem;
                     font-weight: bold;
 
+                    @media (max-width: 900px) and (min-width: 701px) {
+                        font-size: 3.5vw;
+                        width: 18vw;
+                        height: 5vw;
+                    }
+                    @media (max-width: 700px) {
+                        font-size: 5vw;
+                        width: 22vw;
+                        height: 7vw;
+                    }
+
                     &:hover {
                         background: black;
                         color: #F2E085;
                     }
+
                 }
             }
         }
 
         .article-container {
             display: flex;
-            background-color: #124C59;
+
+            background-color: #000000;
+
             justify-content: center;
-            height: 40em;
 
             & div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                max-width: 1200px;
 
                 & h1 {
                     font-size: 5em;
                     color: #fff;
-                    font-family: "Arial", "Calibri", fantasy;
-                    padding-top: 64px;
 
+                    font-family: "Times New Roman", "Castellar", fantasy;
+                    font-style: italic;
+
+                    @media (max-width: 700px) {
+                        font-size: 13vw;
+                    }
                 }
-                & p {
-                    font-family: "Arial", "Calibri", fantasy;
-                    color: white;
+
+                & h2 {
+                    font-size: 2em;
+                    font-weight: bold;
+                    margin-top: 1em;
+                    color: #fff;
+                    font-family: "Times New Roman", "Castellar", fantasy;
+                    font-style: initial;
+
+                    @media (max-width: 700px) {
+                        font-size: 5vw;
+                    }
+                }
+
+
+                & div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    max-width: 1500px;
+
+                    & p {
+                        color: white;
+                        font-size: 1.08em;
+                        line-height: 200%;
+                        text-align: left;
+                        margin: 1em 1em 2em 1em;
+
+                        @media (max-width: 700px) {
+                            text-align: center;
+
+                        }
+                    }
+                    & img {
+                        width: 50%;
+                        object-fit: cover;
+                        margin: 1em 1em 2em 1em;
+
+                        @media (max-width: 700px) {
+                            width: 95%;
+                        }
+                    }
+
+                    @media (max-width: 700px) {
+                        flex-direction: column;
+
+                    }
                 }
             }
         }
@@ -154,7 +245,7 @@
         @media (max-width: 700px) {
 
             .section-container {
-                height: 120em;
+                height: auto;
             }
 
             .picture-container {
@@ -162,19 +253,29 @@
             }
         }
 
-        @media (max-height: 720px) {
+        @media (max-height: 830px) and (min-width: 700px) {
 
             .section-container {
                 height: 100vh;
+                max-height: 100vh;
             }
         }
 
-
     </style>
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".head-container");
 
+            if (window.scrollY > 0) {
+                header.classList.add("header-smaller");
+            } else {
+                header.classList.remove("header-smaller");
+            }
+        });
+    </script>
 </head>
 <body>
-<header class="head-container">
+<header class="head-container header-sticky">
     <div>
         <img src="images/logo.png" alt="Logo der Seite" class="logo">
         <nav>
@@ -220,10 +321,33 @@
 <article class="article-container">
     <div>
         <h1>Info</h1>
+        <h2>Über Sunset-Fitness</h2>
+        <div>
+            <img src="images/green_yoga.png" alt="Yoga im grünen Wald">
+            <p>
+                Willkommen auf Sunset, Ihrer Quelle für natürliche Entspannung während des Arbeitstags.
+                Wir wissen, wie leicht es passiert, dass man sich in der hektischen Arbeitswelt verliert
+                und die eigenen körperlichen Bedürfnisse aus den Augen verliert. Genau deshalb haben wir
+                diese Seite geschaffen – um Ihnen einfache und effektive Übungen zur Verfügung zu stellen,
+                die Sie in kurzen Pausen direkt am Schreibtisch durchführen können.<br>
+
+                Ihre Gesundheit und Ihr Wohlbefinden sind uns wichtig, und wir laden Sie ein, sich regelmäßig
+                eine kleine Pause zu gönnen, um sich selbst zu revitalisieren. Beginnen Sie noch heute mit
+                unseren Übungen und erfahren Sie die Vorteile einer natürlichen Entspannung, die Ihren
+                Arbeitstag verbessern wird.
+            </p>
+
+        </div>
+        <h2>Unser Fokus</h2>
         <div>
             <p>
-                Die Seite wird mit einem text vorgestellt
+                liegt auf den Bereichen, die oft am meisten unter der Dauerbelastung im Büro leiden:
+                Nacken, Schultern, Rücken und Handgelenke.
+                Diese kleinen Übungen sind darauf ausgerichtet, Verspannungen zu lösen, die Durchblutung zu
+                fördern und Ihre Energie zu steigern. Selbst in wenigen Minuten können Sie spürbare
+                Erleichterung und Entspannung erfahren.
             </p>
+            <img src="images/dehnen_im_buero.png" alt="dehnen">
         </div>
     </div>
 </article>
